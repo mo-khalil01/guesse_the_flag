@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Guess the Flag</title>
+   
+</head>
+<body>
+    <h1>Guess the Flag</h1>
+    <p id="score">Score: 0/193</p>
+    <img id="flagImage" src="" alt="Flag Image">
+    <br>
+    
+    <label for="guessInput">Enter your guess:</label>
+    <input type="text" id="guessInput" onkeydown="if(event.keyCode==13) checkGuess(event)">
+    <button onclick="checkGuess()">Check Guess</button>
+    
+    <p id="result"></p>
+</body>
+</html>
